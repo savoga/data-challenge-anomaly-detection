@@ -129,12 +129,13 @@ A famous statistic test for testing stationarity is the <a href="https://en.wiki
 My idea was to compute the test on each observation and score it based on the *p-value*. Doing so on few observations gave quite promising results.
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/adf_ts.png"></img></div>
+
 ```
 ADF p-value: 0.0
 ADF p-value: 1.4514797225057198e-23
 ```
 
-The associated p-values tell us that we should reject the hypothesis of a unit root, thus the serie is not stationary.
+The associated p-values tell us that for the second serie we cannot reject the hypothesis of a unit root, thus the serie is not stationary.
 
 The problem is that computing the test on all the observations was quite a pain; the series are too long and it makes the test computationally not feasible. Alternatively, I tried to compute the test on reduced data (after PCA or smoothing). But the results were not so good.
 
