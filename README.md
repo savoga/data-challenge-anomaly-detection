@@ -12,7 +12,7 @@ The data set is provided by Airbus and consists of the measures of the accelerom
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/data_structure.png"></img></p>
 
-#### Training data
+### Training data
 
 The training set consists of one file, airbus_train.csv.
 
@@ -20,12 +20,37 @@ File airbus_train.csv contains one observation per row, each observation having 
 
 There are in total 1677 training observations.
 
-#### Test data
+### Test data
 
 The training set consists of one file, airbus_test.csv, which has the same structure as file airbus_train.csv.
 
 There are in total 2511 test observations.
 
+## Introduction
+
+For this challenge, I've chosen first to perform some basic analysis to understand the data. This analysis consists of displaying train/test data in order to spot the differences. This allowed me to draw conclusions on the difference of both datasets e.g. the presence of outliers, standardization, stationarity,... and to have a first idea of interesting features to use for the future of my work.
+
+Then, I tried a large number of different algorithms. It turns out that simple Feature Engineering worked the best. I thus focused on this method using the best features as possible. Important to note that the package *tsfresh* brought significant value to my research.
+
 ## 1. Data exploration
 
-## 2. Data analysis
+#### Autocorrelation
+
+5 first entries (columns):
+
+5 random entries:
+
+Since random entries give much more volatile trends, our first conclusion is that autocorrelation may be a good feature to consider (which is often the case with time series).
+
+#### Standardization
+
+Looking at standardization is crucial 
+
+#### Outlier presence
+
+#### Stationarity
+
+
+## 2. Anomaly detection
+
+
