@@ -38,7 +38,11 @@ Then, I tried a large number of different algorithms. It turns out that simple F
 
 5 first entries (columns):
 
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/first_entries.png"></img></p>
+
 5 random entries:
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/random_entries.png"></img></p>
 
 Since random entries give much more volatile trends, our first conclusion is that autocorrelation may be a good feature to consider (which is often the case with time series).
 
