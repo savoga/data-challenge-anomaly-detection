@@ -83,8 +83,17 @@ As the datasets are large, we need to reduce the dataset to perform the detectio
 
 The <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> allows us to reduce the dimensions of both datasets into components that best explain the variance. The graph below shows that the first 20 components seem to explain most of the variance.
 
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/pca_variance.png"></img></p>
 
-Autoencoder
+We can thus perform our analysis on the first 20 components given by the PCA.
+
+#### Autoencoder
+
+<a href="https://en.wikipedia.org/wiki/Autoencoder">Autoencoder</a> is a more recent algorithm that can be used to perform dimension reduction. It is based on neural networks and can find complex separation functions (whereas PCA is for linear separation only).
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/autoencoder.png" width=500></img></p>
+
+In the case of a dimension reduction, only the bottleneck (latent space) is relevant for us.
 
 ## 3. Anomaly detection
 
