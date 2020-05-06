@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/airbus_helicopters.png"></img></div>
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/airbus_helicopters.png"></img></p>
 
 # Data Challenge - Anomaly Detection
 
