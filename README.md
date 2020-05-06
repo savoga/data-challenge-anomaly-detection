@@ -135,7 +135,7 @@ ADF p-value: 0.0
 ADF p-value: 1.4514797225057198e-23
 ```
 
-The associated p-values tell us that for the second serie we cannot reject the hypothesis of a unit root, thus the serie is not stationary.
+The p-value is higher of the second serie so there is a higher chance to accept the unit root hypothesis; the serie is more likely to be not stationary.
 
 The problem is that computing the test on all the observations was quite a pain; the series are too long and it makes the test computationally not feasible. Alternatively, I tried to compute the test on reduced data (after PCA or smoothing). But the results were not so good.
 
