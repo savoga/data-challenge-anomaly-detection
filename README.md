@@ -61,6 +61,8 @@ We can draw the same conclusion for the graph of the test set, however a possibl
 
 The PCA allows us to display observations in 2 dimensions. We can thus easily spot outliers on the test set (right).
 
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/pca_all.png"></img></p>
+
 #### Stationarity
 
 
