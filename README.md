@@ -65,6 +65,15 @@ The PCA allows us to display observations in 2 dimensions. We can thus easily sp
 
 #### Stationarity
 
+2 random observations from the train set:
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/stationarity_train.png"></img></p>
+
+We can see that the both series seem quite stationary. It's less obvious for random observations for the test set:
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/stationarity_test.png"></img></p>
+
+Although the first observation can seem stationary, the mean is quite high compared to most of the observations (as seen previously) which makes it an outlier.
 
 ## 2. Anomaly detection
 
