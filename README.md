@@ -10,6 +10,8 @@ The data set is provided by Airbus and consists of the measures of the accelerom
 
 ## Data
 
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/data_structure.png"></img></p>
+
 #### Training data
 
 The training set consists of one file, airbus_train.csv.
