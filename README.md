@@ -75,9 +75,24 @@ We can see that the both series seem quite stationary. It's less obvious for ran
 
 Although the first observation can seem stationary, the mean is quite high compared to most of the observations (as seen previously) which makes it an outlier.
 
+## 2. Data augmentation
+
+Since both datasets have a relatively low amount of observations, it can be useful to consider data augmentation methods to grow our datasets. There are numerous ways of doing so with time series, I tried few of them.
+
+#### Adding random noise
+
+The easiest way to perform data augmentation is to add a noise to the data. Concretely, it is done as such:
+
+```
+mu, sigma = 0, 0.1
+noise = np.random.normal(mu, sigma, [data.shape[0],data.shape[1]])
+data_noise = data + noise
+data_extend = np.concatenate((data, data_noise), axis=0)
+```
+
 ## 2. Dimension reduction
 
-As the datasets are large, we need to reduce the dataset to perform the detection. This can be done using adapted dimension reduction methods.
+As the datasets are large, some detection algorithms would require to reduce the dataset first. This can be done using adapted dimension reduction methods.
 
 #### PCA
 
@@ -95,14 +110,18 @@ We can thus perform our analysis on the first 20 components given by the PCA.
 
 In the case of a dimension reduction, only the bottleneck (latent space) is relevant for us.
 
-## 3. Anomaly detection
+Surprisingly, PCA gave better results when combined with detection algorithms.
 
-ADF (stationarity)
+## 3. Detection algorithms
 
+#### Stationarity test
 
-Score averaging
+#### Autoencoder
 
-PCA + Isolation Forests
+#### Score averaging
 
-Feature engineering
+#### Isolation forests
 
+## 4. Feature engineering
+
+Feature engineering played a huge part in this project as I could achieve significantly better results using relevant feature.
