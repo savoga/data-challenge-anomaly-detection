@@ -48,9 +48,18 @@ Since random entries give much more volatile trends, our first conclusion is tha
 
 #### Standardization
 
-Looking at standardization is crucial 
+Looking at standardization is important to make sure all features contribute equally to the analysis.
+
+After sampling few data on both sets, we can plot few distributions:
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/standardization_all.png"></img></p>
+
+Graphs from train set (left) indicates that data are standardized.
+We can draw the same conclusion for the graph of the test set, however a possible presence of outliers give more spread values (higher variance). This will be confirmed in the next section.
 
 #### Outlier presence
+
+The PCA allows us to display observations in 2 dimensions. We can thus easily spot outliers on the test set (right).
 
 #### Stationarity
 
