@@ -89,6 +89,9 @@ noise = np.random.normal(mu, sigma, [data.shape[0],data.shape[1]])
 data_noise = data + noise
 data_extend = np.concatenate((data, data_noise), axis=0)
 ```
+#### Other methods
+
+Additional methods include drifting, random time warping, pooling,... I've used briefly an interesting package called <a href="https://pypi.org/project/tsaug/">tsaug</a>.
 
 ## 2. Dimension reduction
 
