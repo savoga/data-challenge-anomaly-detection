@@ -2,7 +2,7 @@
 
 # Data Challenge - Anomaly Detection
 
-This is a university project in the form of a data challenge that I did during my data science degree at Télécom Paris.
+This is a university project in the form of a data challenge that I did during my data science degree at Télécom Paris. This readme summarizes my progress throughout the analysis. For the exact progress, see the notebook file.
 
 ## Context
 
@@ -59,7 +59,7 @@ We can draw the same conclusion for the graph of the test set, however a possibl
 
 #### Outlier presence
 
-The PCA allows us to display observations in 2 dimensions. We can thus easily spot outliers on the test set (right).
+The PCA (see explanation below) allows us to display observations in 2 dimensions. We can thus easily spot outliers on the test set (right).
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/pca_all.png"></img></p>
 
@@ -75,6 +75,25 @@ We can see that the both series seem quite stationary. It's less obvious for ran
 
 Although the first observation can seem stationary, the mean is quite high compared to most of the observations (as seen previously) which makes it an outlier.
 
-## 2. Anomaly detection
+## 2. Dimension reduction
 
+As the datasets are large, we need to reduce the dataset to perform the detection. This can be done using adapted dimension reduction methods.
+
+#### PCA
+
+The <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">PCA</a> allows us to reduce the dimensions of both datasets into components that best explain the variance. The graph below shows that the first 20 components seem to explain most of the variance.
+
+
+Autoencoder
+
+## 3. Anomaly detection
+
+ADF (stationarity)
+
+
+Score averaging
+
+PCA + Isolation Forests
+
+Feature engineering
 
