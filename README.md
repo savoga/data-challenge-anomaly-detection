@@ -89,6 +89,9 @@ noise = np.random.normal(mu, sigma, [data.shape[0],data.shape[1]])
 data_noise = data + noise
 data_extend = np.concatenate((data, data_noise), axis=0)
 ```
+
+Although this is fairly simple, it allowed me to slightly boost my detection score.
+
 #### Other methods
 
 Additional methods include drifting, random time warping, pooling,... I've used briefly an interesting package called <a href="https://pypi.org/project/tsaug/">tsaug</a>.
@@ -117,7 +120,15 @@ Surprisingly, PCA gave better results when combined with detection algorithms.
 
 ## 3. Detection algorithms
 
+In order to detect outliers, plenty of algorithms are already implemented and quite easy to use.
+
 #### Stationarity test
+
+A famous statistic test for testing stationarity is the <a href="https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test">Augmented Dickey-Fuller test</a>. Essentially, it tests the presence of a unit root.
+
+My idea was to compute the test on each observation and score it based on the *p-value*. Doing so on few observations gave quite promising results.
+
+The problem is that computing the test on all the observations was quite a pain; the series are too long and it makes the test computationally not feasible. Alternatively, I tried to compute the test on reduced data (after PCA or smoothing). But the results were not so good.
 
 #### Autoencoder
 
