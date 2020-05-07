@@ -96,7 +96,7 @@ Although this is fairly simple, it allowed me to slightly boost my detection sco
 
 Additional methods include drifting, random time warping, pooling,... I've used briefly an interesting package called <a href="https://pypi.org/project/tsaug/">tsaug</a>.
 
-## 2. Dimension reduction
+## 3. Dimension reduction
 
 As the datasets are large, some detection algorithms would require to reduce the dataset first. This can be done using adapted dimension reduction methods.
 
@@ -118,7 +118,7 @@ In the case of a dimension reduction, only the bottleneck (latent space) is rele
 
 Surprisingly, PCA gave better results when combined with detection algorithms.
 
-## 3. Detection algorithms
+## 4. Detection algorithms
 
 In order to detect outliers, plenty of algorithms are already implemented and quite easy to use.
 
@@ -165,13 +165,13 @@ The <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/ma
 
 The reachability-distance tells us how far is a point starting *from* its neighbors.
 
-The distance metric I used is simply the *euclidean* distance. One of the main advantage of using such an easy metric is that I could easily introduce binary variables (see Feature Engineering).
+The distance metric I used is simply the *euclidean* distance. One of the main advantage of using such an easy metric is that I could easily introduce binary variables when doing feature engineering.
 
 #### Score averaging
 
 I tried to run several models and then averaging their scores but the results were not satisfactory.
 
-## 4. Feature engineering
+## 5. Feature engineering
 
 Feature engineering played a huge part in this project as I could achieve significantly better results using relevant feature.
 
@@ -193,7 +193,7 @@ The 5 features that gave me the best scores are the following:
   
 The last three features allow to measure linearity, complexity and symmetry of a serie. More details can be found on the library website.
 
-## 5. Results
+## 6. Results
 
 My progress throughout the challenge is displayed on this graph:
 
