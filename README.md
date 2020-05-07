@@ -185,9 +185,13 @@ The 5 features that gave me the best scores are the following:
 
 - max
 
-- c3: 
+- c3: <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/c3.gif></img>
 
-- cid: 
+- cid: <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/cid.gif></img>
+  
+- symmetry looking: <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/symmetry-looking.gif></img>
+  
+The last three features allow to measure linearity, complexity and symmetry of a serie. More details can be found on the library website.
 
 ## 5. Results
 
