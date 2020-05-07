@@ -145,6 +145,8 @@ Autoencoders can be used to learn about a distribution and reconstruct some data
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/loss-autoencoder.gif"></img></p>
 
+Observations associated with a higher loss will be more likely to be outliers since they are likely to be very different from the train set.
+
 #### Score averaging
 
 #### Isolation forests
