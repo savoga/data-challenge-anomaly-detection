@@ -143,7 +143,7 @@ The problem is that computing the test on all the observations was quite a pain;
 
 Autoencoders can be used to learn about a distribution and reconstruct some data. The method consists of learning on the train set and scoring on the test set using the following loss function:
 
-<img src="https://latex.codecogs.com/gif.latex?\mathcal{L}(X,\hat{X})&space;=&space;|X-\hat{X}|^2" title="\mathcal{L}(X,\hat{X}) = |X-\hat{X}|^2" />
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/loss-autoencoder.gif"></img></p>
 
 #### Score averaging
 
