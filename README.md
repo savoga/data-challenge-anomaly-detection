@@ -155,7 +155,7 @@ This method gave first satisfactory results when combined with PCA with 20 compo
 
 #### Local Outlier Factor
 
-Local Outlier Factor is a quite simple detection algorithm that performed really well for this problem. 
+<a href="https://en.wikipedia.org/wiki/Local_outlier_factor">Local Outlier Factor</a> is a quite simple detection algorithm that performed really well for this problem. The training step consists of memorizing all train observations. Then in the prediction step it find the smallest distances between the test observations and the training ones. The closer it is to training observations, the lower the probability it's an outlier.
 
 #### Score averaging
 
