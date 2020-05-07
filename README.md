@@ -199,4 +199,4 @@ My progress throughout the challenge is displayed on this graph:
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/data_challenge_score.png"></img></p>
 
-I finished with a score of 0.8813 which ranked me 4 over 51 participants.
+I finished with a score of 0.8813 which gave me a rank of 4 over 51 participants.
