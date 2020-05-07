@@ -141,6 +141,10 @@ The problem is that computing the test on all the observations was quite a pain;
 
 #### Autoencoder
 
+Autoencoders can be used to learn about a distribution and reconstruct some data. The method consists of learning on the train set and scoring on the test set using the following loss function:
+
+<img src="https://latex.codecogs.com/gif.latex?\mathcal{L}(X,\hat{X})&space;=&space;|X-\hat{X}|^2" title="\mathcal{L}(X,\hat{X}) = |X-\hat{X}|^2" />
+
 #### Score averaging
 
 #### Isolation forests
