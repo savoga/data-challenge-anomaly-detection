@@ -185,7 +185,7 @@ The 5 features that gave me the best scores are the following:
 
 - max
 
-- c3: <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/c3.gif></img>
+<img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/c3.gif></img>
 
 - cid: <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/cid.gif></img>
   
