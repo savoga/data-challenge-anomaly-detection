@@ -147,9 +147,17 @@ Autoencoders can be used to learn about a distribution and reconstruct some data
 
 Observations associated with a higher loss will be more likely to be outliers since they are likely to be very different from the train set.
 
-#### Score averaging
-
 #### Isolation forests
+
+<a href="https://en.wikipedia.org/wiki/Isolation_forest">Isolation forests</a> are quite intuitive to detect outliers. In short, they allow to isolate abnormal data that have significantly different attributes.
+
+This method gave first satisfactory results when combined with PCA with 20 components.
+
+#### Local Outlier Factor
+
+Local Outlier Factor is a quite simple detection algorithm that performed really well for this problem. 
+
+#### Score averaging
 
 ## 4. Feature engineering
 
