@@ -165,7 +165,7 @@ The <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/ma
 
 The reachability-distance tells us how far is a point starting *from* its neighbors.
 
-The distance metric I used is simply the *euclidean* distance. One of the main advantage of using such an easy metric is that I could easily introduce binary variables (see Feature Engineering).
+The distance metric I used is simply the *euclidean* distance. One of the main advantage of using such an easy metric is that I could easily introduce binary variables when doing feature engineering.
 
 #### Score averaging
 
