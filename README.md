@@ -161,14 +161,38 @@ Local densities are based on reachability-distance defined as such:
 
 <p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/reachability-distance.gif"></img></p>
 
-This distance represents how far is a point starting *from* its neighbors.
+The <img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/k-distance.gif"></img> is the distance between an object and its kth nearest neighbor.
 
-The distance metric I used is simply *euclidean*. One of the main advantage of using such an easy metric is that I could easily introduce binary variables (see Feature Engineering).
+The reachability-distance tells us how far is a point starting *from* its neighbors.
 
-
+The distance metric I used is simply the *euclidean* distance. One of the main advantage of using such an easy metric is that I could easily introduce binary variables (see Feature Engineering).
 
 #### Score averaging
+
+I tried to run several models and then averaging their scores but the results were not satisfactory.
 
 ## 4. Feature engineering
 
 Feature engineering played a huge part in this project as I could achieve significantly better results using relevant feature.
+
+During this challenge I found out a library called <a href="https://tsfresh.readthedocs.io/en/latest/">tsfresh</a> that I found very powerful. It has more than 60 features implemented for time series.
+
+The 5 features that gave me the best scores are the following:
+
+- autocorrelation (lag 3)
+
+- mean
+
+- max
+
+- c3: 
+
+- cid: 
+
+## 5. Results
+
+My progress throughout the challenge is displayed on this graph:
+
+<p align="center"><img src="https://github.com/savoga/data-challenge-anomaly-detection/blob/master/img/data_challenge_score.png"></img></p>
+
+I finished with a score of 0.8911 which ranked me 4 over 51 participants.
